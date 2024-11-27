@@ -36,13 +36,22 @@ body {
 
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space out elements */
     background: #111;
-    padding: 10px 0;
+    padding: 3px 0;
     position: sticky;
     top: 0;
     z-index: 10;
   }
+
+  .navbar-logo {
+    width: 15vh; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 20px;
+
+    cursor: pointer;
+  }
+
 
   nav button {
     font-size: 18px;
