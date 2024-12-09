@@ -6,22 +6,27 @@
   <title>Shadow Wizard Coding Gang Website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href=".\ASSETS\WBESITE_ICON.ico">
-
 </head>
 <body>
+  <div class="background-layer"></div>
   <nav>
-    <a href="index.html">
-      <img src=".\ASSETS\NAV_IMG.png" alt="Logo" class="navbar-logo">
-    </a>
-    <button onclick="navigateTo(1)">Page 1</button>
-    <button onclick="navigateTo(2)">Page 2</button>
-    <button onclick="navigateTo(3)">Page 3</button>
-    <button onclick="navigateTo(4)">Page 4</button>
-    <button onclick="navigateTo(5)">Page 5</button>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src=".\ASSETS\NAV_IMG.png" alt="Logo" class="navbar-logo">
+      </a>
+    </div>
+    <button onclick="navigateTo(1)">Home</button>
+    <button onclick="navigateTo(2)">Movies</button>
+    <button onclick="navigateTo(3)">Games</button>
+    <button onclick="navigateTo(4)">Battleground</button>
+    <button onclick="navigateTo(5)">Contact Us</button>
+    <button class="invisible" disabled></button>
   </nav>
 
-  <div id="content" class="container">
-    Page 1
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel('left')">←</button>
+    <div class="carousel"></div>
+    <button class="carousel-btn right" onclick="scrollCarousel('right')">→</button>
   </div>
 
   <script src="scripts.js"></script>
