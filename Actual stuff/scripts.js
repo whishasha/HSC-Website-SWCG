@@ -39,3 +39,28 @@ function updateCarouselPosition() {
 window.onload = () => {
   loadPosters();
 };
+
+function navigateTo(page) {
+  let targetPage = '';
+
+  switch (page) {
+    case 1:
+      targetPage = 'index.html';
+      break;
+    case 2:
+      targetPage = 'movies.html';
+      break;
+    case 3:
+      targetPage = 'games.html';
+      break;
+    case 4:
+      targetPage = 'battleground.html';
+      break;
+    case 5:
+      targetPage = 'contact.html';
+      break;
+  }
+
+  // Navigate to the selected page
+  window.location.href = targetPage;
+}

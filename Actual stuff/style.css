@@ -49,7 +49,7 @@ body {
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
-  width: fit-content; 
+  width: fit-content;
 }
 
 .carousel img {
