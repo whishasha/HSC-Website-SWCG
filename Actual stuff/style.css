@@ -44,12 +44,27 @@ body {
   overflow: hidden;
   width: 80%; /* Adjust to your preference */
   margin: auto;
+  margin-top: 10px;
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
   width: fit-content;
+  gap: 20px
+}
+
+.carousel-title {
+  font-size: 2rem;
+  color: #e1e1e1;
+  margin-bottom: 20px; /* Space between the title and carousel */
+  font-family: Arial, sans-serif;
+}
+
+.carousel-section {
+  position: relative;
+  text-align: center;
+  margin: auto;
 }
 
 .carousel img {
